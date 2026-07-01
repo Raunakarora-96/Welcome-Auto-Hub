@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Welcome Auto Hub</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header class="header">
+
+<div class="logo">
+<img src="welcome_logo.jfif">
+</div>
+
+<nav class="navbar">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="product.html">Products</a></li>
+<li><a href="gallery.html">Gallery</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+
+</header>
+
+<section class="featured-products" style="margin-top:100px;">
+
+<h2>Company Gallery</h2>
+
+<div class="gallery-grid">
+
+    <div class="gallery-card">
+        <img src="carrier.jfif" alt="Carrier">
+        <div class="gallery-overlay">
+            <h3>Carrier</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="side guard.jfif" alt="Side Guard">
+        <div class="gallery-overlay">
+            <h3>Side Guard</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="diffuser.jfif" alt="diffuser">
+        <div class="gallery-overlay">
+            <h3>Diffuser</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="footstep.jfif" alt="footstep">
+        <div class="gallery-overlay">
+            <h3>Footstep</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="roof_rails_2.jfif" alt="Roof Rails">
+        <div class="gallery-overlay">
+            <h3>Roof Rail</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="spoiler.jfif" alt="spoiler">
+        <div class="gallery-overlay">
+            <h3>Spoiler</h3>
+        </div>
+    </div>
+
+    <div class="gallery-card">
+        <img src="cruz.jpg" alt="Cruz Kit">
+        <div class="gallery-overlay">
+            <h3>Fitting Kits</h3>
+        </div>
+    </div>
+
+</div>
+
+</section>
+<script>
+const images = document.querySelectorAll('.gallery-card img');
+
+images.forEach(img=>{
+    img.addEventListener('click',()=>{
+        window.open(img.src,'_blank');
+    });
+});
+</script>
+
+<footer>
+<div class="footer-content">
+</div>
+
+    <div class="footer-content">
+
+        <h3>Welcome Auto Hub</h3>
+
+        <p>
+            Ganda Nala Bazaar,
+            Kashmere Gate,
+            Delhi
+        </p>
+
+        <p>
+            Phone:
+            9205075306
+        </p>
+
+        <p>
+            Email:
+            aroraraunak@welcome.in
+        </p>
+
+    </div>
+
+</footer>
+
+</body>
+</html>

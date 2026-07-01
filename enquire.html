@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Enquiry | Welcome Auto Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+}
+
+header{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+.container{
+    width:90%;
+    max-width:700px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+h2{
+    color:#ff6600;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.form-group{
+    margin-bottom:15px;
+}
+
+label{
+    display:block;
+    margin-bottom:5px;
+    font-weight:bold;
+}
+
+input,
+textarea,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+textarea{
+    resize:none;
+}
+
+button{
+    width:100%;
+    background:#ff6600;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e65c00;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:30px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Product Enquiry</h1>
+</header>
+
+<div class="container">
+
+    <h2>Enquire About a Product</h2>
+
+    <form>
+
+        <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" required>
+        </div>
+
+        <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" required>
+        </div>
+
+        <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" required>
+        </div>
+
+        <div class="form-group">
+            <label>Select Product</label>
+            <select required>
+                <option>Engine Parts</option>
+                <option>Brake System</option>
+                <option>Battery</option>
+                <option>Suspension Parts</option>
+                <option>Accessories</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Your Requirement</label>
+            <textarea rows="5"></textarea>
+        </div>
+
+        <button type="submit">Submit Enquiry</button>
+<div class="selected-product">
+    <img id="productImage" width="250">
+    <h2 id="productName"></h2>
+</div>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+
+</script>
+
+    </form>
+
+</div>
+
+<footer>
+    <p>&copy; 2026 Welcome Auto Hub. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
